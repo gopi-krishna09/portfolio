@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">GOPIKRISHNA PORTFOLIO </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">GOPIKRISHNA</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon " onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu() ">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section class="profile" id="home">
+      <div class="section__pic-container">
+        <img src="assets/GOPIKRISHNA.png" alt="Gopikrishna profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">GOPIKRISHNA</h1>
+        <p class="section__text__p2"><span class="multiple-text"></span></p>
+        <div class="btn-container">
+          <a href="assets/GOPIKRISHNA  S (2024-BCA).pdf" download class="btn btn-color-1">Download CV</a>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/gopikrishna9'"
+          />
+          <img
+            src="assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/gopi-krishna09'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/GOPIKRISHNA.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3> <br>
+              <p>BCA</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Course</h3> <br>
+              <p>PGDCA , <br> FULLSTACK DEVELOPER</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A driven and meticulous Computer Application graduate with excellent problem-solving abilities. Enthusiastic about utilizing
+              academic expertise and advancing as a developer in a dynamic and challenging setting
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SKILLS SECTION-->
+
+    <section class="skills" id="skills">
+      <h2>Technical <span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="assets/PYTHON.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill">
+          <img src="assets/SQL.png" alt="SQL">
+          <p>SQL</p>
+        </div>
+        <div class="skill">
+          <img src="assets/HTML.png" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <img src="assets/CSS.png" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="assets/JavaScript.png" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="assets/BOOTSTRAP.png" alt="Bootstrap">
+          <p>Bootstrap</p>
+        </div>
+        <div class="skill">
+          <img src="assets/github.png" alt="Bootstrap">
+          <p>GITHUB</p>
+        </div>
+      </div>
+    </section>
+
+    <!--PROJECT SECTION-->
+
+    <section class="project" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="project-container">
+          <div class="project-box">
+              <img src="assets/employee management.png" alt="">
+              <div class="project-layer">
+                  <h4>EMPLOYEE MANAGEMENT SYSTEM</h4> <br>
+                  <p> • Developed a Tkinter-based GUI for managing employee records with CRUD functionality, integrated MySQL for data storage, and used the Treeview widget for real-time data display and validation.
+                  </p>
+                  <a href= "https://github.com/gopi-krishna09/emplyome-management-system.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+
+          <div class="project-box">
+              <img src="assets/personalex tracker.png" alt="">
+              <div class="project-layer">
+                  <h4>PERSONAL EXPENSES TRACKER </h4> <br>
+                  <p> • Created a personal expense tracker with Python and Tkinter, featuring a database backend for efficient record management, CRUD functionality, real-time data display through Treeview, and robust input validation for an intuitive user experience.
+                  </p>
+                  <a href="https://github.com/gopi-krishna09/personal_expense_tracker.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+
+          <div class="project-box">
+              <img src="assets/grocery webapp.webp" alt="">
+              <div class="project-layer">
+                  <h4>GROCERY WEB APPLICATION</h4> <br>
+                  <p> • Developed a web-based grocery management application using Python (Flask) and MySQL with user authentication, CRUD operations, and a responsive frontend in HTML, CSS, and JavaScript for efficient and secure grocery list management.  
+                  </p>
+                  <a href="https://github.com/gopi-krishna09/grocery_webapp.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!--CONTACT SECTION-->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">gopikrishna090604@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 GOPIKRISHNA. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
