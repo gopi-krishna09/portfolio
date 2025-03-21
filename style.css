@@ -8,10 +8,9 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: rgb(41, 38, 38);
+  font-family: 'Lobster', cursive;
+  background-color: rgb(0, 0, 0);
   color: white;
-  
 
 }
 
@@ -71,6 +70,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  
 }
 
 .nav-links {
@@ -85,15 +85,21 @@ a {
   text-decoration-color: white;
 }
 
+
 a:hover {
-  color: grey;
+  opacity: 70%;
+  text-shadow: 0 0 1rem  ;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
+  position:relative;
+  left: -10px;
+  top: 0;
   font-size: 2rem;
+  transition: 0.2s;
 }
 
 .logo:hover {
@@ -107,14 +113,17 @@ a:hover {
 }
 
 .hamburger-menu {
-  position: relative;
-  display: inline-block;
+  position:absolute;
+  top:30px;
+  right: 20px;
+  z-index: 1;
+  
 }
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:space-between;
   height: 24px;
   width: 30px;
   cursor: pointer;
@@ -123,7 +132,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: rgb(66, 63, 63);
   transition: all 0.3 ease-in-out;
 }
 
@@ -132,7 +141,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: rgb(10, 9, 9);
+  background-color:rgb(53, 53, 53);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -266,24 +275,21 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   color: white;
   text-decoration: none;
+  transition: all 0.2 ;
 }
 
-.btn-color-2 {
-  background: none;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  color: white;
-  text-decoration: none;
-}
 
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
+  color: white;
   text-decoration: none;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  text-align: center;
 }
 
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  text-decoration: none;
-}
+
 
 .btn-container {
   gap: 1rem;
@@ -368,12 +374,7 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-  margin-left: 30px;
-  margin-top:20px ;
+  margin-top: 20px;
 }
 
 .arrow {
@@ -385,11 +386,18 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: rgb(20, 18, 18);
+  background: rgb(53, 52, 52);
   border-radius: 2rem;
   border: rgb(8, 8, 8) 0.1rem solid;
-  border-color: rgb(8, 8, 8);
+  border-color: rgb(61, 56, 56);
+  box-shadow: 0 0 1rem ;
   text-align: center;
+  transition: 0.3 ease;
+}
+
+.details-container:hover{
+  box-shadow: 0 0 20px rgba(120, 81, 169, 0.9); 
+  border: 2px solid rgba(120, 81, 169, 0.9);
 }
 
 .section-container {
@@ -459,15 +467,17 @@ article .icon {
 /* Skills Grid */
 
 .skills-container {
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
 }
 
 .skill {
+  background-color: rgb(53, 53, 53);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -479,9 +489,10 @@ article .icon {
   transform: translateY(-15px);
   background: rgb(30, 30, 31);
   color: rgb(181, 227, 245);
-  box-shadow: 0 0 1rem rgb(181, 227, 245);
-  border: .2rem solid rgb(181, 227, 245);
+  box-shadow: 0 0 20px rgba(120, 81, 169, 0.9); /* Royal Purple Glow */
+  border: 2px solid rgba(120, 81, 169, 0.9);
 }
+
 
 .skill img {
   max-width: 50px;
@@ -510,7 +521,7 @@ article .icon {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
   align-items: center;
   gap: 2.5rem;
 }
@@ -518,7 +529,7 @@ article .icon {
 .project-container .project-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem #fff;
+  box-shadow: 0 0 1rem ;
   overflow: hidden;
   display: flex;
 }
@@ -528,6 +539,11 @@ article .icon {
   height:100%;
   transition: .5s ease;
   opacity: 0.7;
+}
+
+.project-box:hover{
+  box-shadow: 0 0 20px rgba(120, 81, 169, 0.9); /* Royal Purple Glow */
+  border: 2px solid rgba(120, 81, 169, 0.9);
 }
 
 .project-box:hover img{
@@ -542,7 +558,7 @@ article .icon {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.1),  rgb(31, 37, 39));
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -553,22 +569,33 @@ article .icon {
 
 .project-box:hover .project-layer {
   transform: translate(0);
-}
-
-.project-layer h4{
-  font-size: 1.5rem;
-  gap: 30px;
+  background: rgb(30, 30, 31);
+  color: rgba(120, 81, 169, 0.9);
   
 }
 
+.project-layer h4{
+  position: relative;
+  top: 10px;
+  font-size: 1.5rem; 
+  gap: 30px;
+}
+
 .project-layer p {
-  font-size: 10.5px;
+  position: relative;
+  bottom: 20px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   gap: 20px;
 
 }
 
 .project-layer a{
+  position: relative;
+  bottom: 20px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -603,6 +630,7 @@ article .icon {
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
+  background-color: rgb(53, 53, 53);
 }
 
 .contact-info-container {
@@ -611,7 +639,9 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  text-align: center;
 }
+
 
 .contact-info-container p {
   font-size: larger;

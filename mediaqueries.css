@@ -84,7 +84,10 @@
     font-size: 1.25rem;
   }
   .logo {
-    font-size: 1.5rem;
+      left: -110px;
+      top:-5px;
+      transition: 0.2s;
+      font-size: 1.5rem;
   }
   .nav-links {
     flex-direction: column;
